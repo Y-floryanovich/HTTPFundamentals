@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace Client
         const string URLSIMPLE = "http://localhost:8888/";
         const string URLFORGETTINGNAME = "http://localhost:8888/MyName/";
         const string URLFORHEADER = "http://localhost:8888/MyNameByHeader/";
+        const string URLFORCOOKIES = "http://localhost:8888/MyNameByCookies/";
 
 
 
@@ -43,11 +45,14 @@ namespace Client
                     //}
 
                 }
-
-                var response = await client.GetAsync(URLFORHEADER);
+                CookieContainer cookies = new CookieContainer();
+                var response = await client.GetAsync(URLFORCOOKIES);
                 string responseBody = await response.Content.ReadAsStringAsync();
                 var responseStatus = response.StatusCode;
                 var responseHeader = response.Headers;
+                IEnumerable<Cookie> responseCookies = cookies.GetCookies(new Uri(URLFORCOOKIES)).Cast<Cookie>();
+                foreach (Cookie cookie in responseCookies)
+                    Console.WriteLine(cookie.Name + ": " + cookie.Value);
                 // Above three lines can be replaced with new helper method below
                 // string responseBody = await client.GetStringAsync(uri);
 

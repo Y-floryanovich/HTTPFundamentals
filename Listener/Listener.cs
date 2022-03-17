@@ -68,13 +68,24 @@ namespace Listener
                 case "/MyNameByHeader/":
                     GetMyNameByHeader(response);
                     return;
-                    
+                case "/MyNameByCookies/":
+                    GetMyNameByCookies(response);
+                    return;
+
             }
         }
 
         private static void GetMyName(HttpListenerResponse response)
         {
             var name = "Yana";
+            SendResponse(name, response);
+        }
+
+        private static void GetMyNameByCookies(HttpListenerResponse response)
+        {
+            var name = "Yana";
+            Cookie cook = new Cookie("MyName", "Yana");
+            response.AppendCookie(cook);
             SendResponse(name, response);
         }
 
