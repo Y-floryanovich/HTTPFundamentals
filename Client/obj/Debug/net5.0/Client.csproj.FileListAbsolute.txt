@@ -1,0 +1,16 @@
+C:\.NET Basic\HTTPFundamentals\Client\bin\Debug\net5.0\Client.exe
+C:\.NET Basic\HTTPFundamentals\Client\bin\Debug\net5.0\Client.deps.json
+C:\.NET Basic\HTTPFundamentals\Client\bin\Debug\net5.0\Client.runtimeconfig.json
+C:\.NET Basic\HTTPFundamentals\Client\bin\Debug\net5.0\Client.runtimeconfig.dev.json
+C:\.NET Basic\HTTPFundamentals\Client\bin\Debug\net5.0\Client.dll
+C:\.NET Basic\HTTPFundamentals\Client\bin\Debug\net5.0\ref\Client.dll
+C:\.NET Basic\HTTPFundamentals\Client\bin\Debug\net5.0\Client.pdb
+C:\.NET Basic\HTTPFundamentals\Client\obj\Debug\net5.0\Client.csproj.AssemblyReference.cache
+C:\.NET Basic\HTTPFundamentals\Client\obj\Debug\net5.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\.NET Basic\HTTPFundamentals\Client\obj\Debug\net5.0\Client.AssemblyInfoInputs.cache
+C:\.NET Basic\HTTPFundamentals\Client\obj\Debug\net5.0\Client.AssemblyInfo.cs
+C:\.NET Basic\HTTPFundamentals\Client\obj\Debug\net5.0\Client.csproj.CoreCompileInputs.cache
+C:\.NET Basic\HTTPFundamentals\Client\obj\Debug\net5.0\Client.dll
+C:\.NET Basic\HTTPFundamentals\Client\obj\Debug\net5.0\ref\Client.dll
+C:\.NET Basic\HTTPFundamentals\Client\obj\Debug\net5.0\Client.pdb
+C:\.NET Basic\HTTPFundamentals\Client\obj\Debug\net5.0\Client.genruntimeconfig.cache
